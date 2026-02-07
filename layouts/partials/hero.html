@@ -1,0 +1,52 @@
+<!-- Hero Section - Text left, video container right on desktop; stacked on mobile -->
+<section class="bg-gradient-to-b from-gray-50 to-white py-12 md:py-20" data-testid="hero-section">
+  <div class="container-wide">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <!-- Text Content -->
+      <div class="order-1 lg:order-1">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-deep leading-tight mb-6" data-testid="hero-headline">
+          Building alignment that works when AI surpasses human capability
+        </h1>
+
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+          {{ .Params.mission | default "The Alignment Ethics Institute develops governance structures and technologies grounded in substrate-independent ethical principles. We believe genuine alignment emerges from coherent ethical relationships, not from control or instrumentalization." }}
+        </p>
+
+        <a href="/get-involved/" class="btn-primary no-underline" data-testid="hero-cta">
+          Get Involved
+        </a>
+      </div>
+
+      <!-- Video Container -->
+      <div class="order-2 lg:order-2">
+        <div class="video-container relative aspect-square max-w-md mx-auto lg:max-w-none" data-testid="hero-video-container">
+          <!-- Video element - hidden when prefers-reduced-motion is enabled -->
+          <video
+            class="hero-video w-full h-full object-cover rounded-lg shadow-lg"
+            muted
+            autoplay
+            loop
+            playsinline
+            poster="/images/hero-fallback.jpg"
+            aria-label="Animated visualization representing AI alignment concepts"
+          >
+            <source src="/media/hero.webm" type="video/webm">
+            <source src="/media/hero.mp4" type="video/mp4">
+            <!-- Fallback for browsers that don't support video -->
+            <div class="video-fallback"></div>
+          </video>
+
+          <!-- Static fallback container - shown when prefers-reduced-motion is enabled -->
+          <div class="video-fallback-static hidden w-full h-full rounded-lg shadow-lg bg-gradient-to-br from-blue-deep via-blue-light to-gold flex items-center justify-center">
+            <div class="text-center text-white p-8">
+              <svg class="w-16 h-16 mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"></path>
+              </svg>
+              <p class="text-sm opacity-90">Alignment visualization</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,215 @@
+{{ define "main" }}
+<article class="py-12 md:py-20">
+  <div class="container-wide">
+    <header class="mb-12 text-center">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-deep mb-4" data-testid="page-title">
+        {{ .Title }}
+      </h1>
+      {{ with .Params.subtitle }}
+      <p class="text-lg text-gray-600">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    {{ with .Content }}
+    <div class="prose prose-lg mx-auto text-gray-700 mb-12 text-center max-w-3xl" data-testid="page-content">
+      {{ . }}
+    </div>
+    {{ end }}
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Newsletter Section -->
+      <section class="bg-white rounded-lg p-8 shadow-sm border border-gray-100" data-testid="newsletter-section">
+        <div class="text-center mb-6">
+          <div class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h2 class="text-xl font-semibold text-blue-deep mb-2">Newsletter</h2>
+          <p class="text-gray-600 text-sm">Stay informed about our research, publications, and events.</p>
+        </div>
+
+        <!-- Newsletter Form - Replace YOUR_FORM_ID with actual Formspree form ID -->
+        <form
+          action="https://formspree.io/f/xreknolq"
+          method="POST"
+          class="space-y-4"
+          data-testid="newsletter-form"
+        >
+          <div>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              required
+              placeholder="your@email.com"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-light focus:border-blue-light outline-none transition-colors"
+              data-testid="newsletter-email"
+            >
+          </div>
+          <input type="hidden" name="_subject" value="Newsletter Signup">
+          <button
+            type="submit"
+            class="btn-primary w-full"
+            data-testid="newsletter-submit"
+          >
+            Subscribe
+          </button>
+        </form>
+      </section>
+
+      <!-- Applications Section -->
+      <section class="bg-white rounded-lg p-8 shadow-sm border border-gray-100" data-testid="applications-section">
+        <div class="text-center mb-6">
+          <div class="w-12 h-12 bg-blue-deep/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-blue-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h2 class="text-xl font-semibold text-blue-deep mb-2">Applications</h2>
+          <p class="text-gray-600 text-sm">Join our team or collaborate with us.</p>
+        </div>
+
+        <div class="space-y-4">
+          <a
+            href="mailto:advisory@alignmentethics.org?subject=Advisory%20Board%20Inquiry"
+            class="block w-full px-4 py-3 text-center border-2 border-blue-deep text-blue-deep font-medium rounded-md hover:bg-blue-deep hover:text-white transition-colors no-underline"
+            data-testid="advisory-link"
+          >
+            Advisory Board
+          </a>
+          <a
+            href="mailto:board@alignmentethics.org?subject=Board%20of%20Directors%20Inquiry"
+            class="block w-full px-4 py-3 text-center border-2 border-blue-deep text-blue-deep font-medium rounded-md hover:bg-blue-deep hover:text-white transition-colors no-underline"
+            data-testid="board-link"
+          >
+            Board of Directors
+          </a>
+          <a
+            href="mailto:partnerships@alignmentethics.org?subject=Partnership%20Inquiry"
+            class="block w-full px-4 py-3 text-center border-2 border-blue-deep text-blue-deep font-medium rounded-md hover:bg-blue-deep hover:text-white transition-colors no-underline"
+            data-testid="partnerships-link"
+          >
+            Collaborator/Partner
+          </a>
+        </div>
+      </section>
+
+      <!-- Connect Section -->
+      <section class="bg-white rounded-lg p-8 shadow-sm border border-gray-100" data-testid="connect-section">
+        <div class="text-center mb-6">
+          <div class="w-12 h-12 bg-blue-light/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+          </div>
+          <h2 class="text-xl font-semibold text-blue-deep mb-2">Connect</h2>
+          <p class="text-gray-600 text-sm">Have questions or want to learn more?</p>
+        </div>
+
+        <div class="space-y-4">
+          <a
+            href="/contact/"
+            class="btn-primary block w-full text-center no-underline"
+            data-testid="contact-link"
+          >
+            Contact Us
+          </a>
+          <p class="text-center text-sm text-gray-500">
+            We welcome inquiries from researchers, potential collaborators, and anyone interested in ethical AI alignment.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Interest Form -->
+    <section class="mt-16 max-w-2xl mx-auto" data-testid="interest-form-section">
+      <div class="bg-gray-50 rounded-lg p-8">
+        <h2 class="text-2xl font-semibold text-blue-deep mb-2 text-center">Express Interest</h2>
+        <p class="text-gray-600 text-center mb-6">Tell us about yourself and how you'd like to contribute.</p>
+
+        <!-- Interest Form - Replace YOUR_FORM_ID with actual Formspree form ID -->
+        <form
+          action="https://formspree.io/f/mbdynpzy"
+          method="POST"
+          class="space-y-4"
+          data-testid="interest-form"
+        >
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="interest-name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <input
+                type="text"
+                id="interest-name"
+                name="name"
+                required
+                placeholder="Your name"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-light focus:border-blue-light outline-none transition-colors"
+                data-testid="interest-name"
+              >
+            </div>
+            <div>
+              <label for="interest-email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <input
+                type="email"
+                id="interest-email"
+                name="email"
+                required
+                placeholder="your@email.com"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-light focus:border-blue-light outline-none transition-colors"
+                data-testid="interest-email"
+              >
+            </div>
+          </div>
+
+          <div>
+            <label for="interest-type" class="block text-sm font-medium text-gray-700 mb-1">I'm interested in...</label>
+            <select
+              id="interest-type"
+              name="interest_type"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-light focus:border-blue-light outline-none transition-colors"
+              data-testid="interest-type"
+            >
+              <option value="">Select an option</option>
+              <option value="research">Research collaboration</option>
+              <option value="advisory">Advisory Board</option>
+              <option value="board">Board of Directors</option>
+              <option value="partnership">Partnership opportunities</option>
+              <option value="funding">Funding/Grants</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="interest-message" class="block text-sm font-medium text-gray-700 mb-1">Tell us more</label>
+            <textarea
+              id="interest-message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Share your background and how you'd like to contribute..."
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-light focus:border-blue-light outline-none transition-colors resize-none"
+              data-testid="interest-message"
+            ></textarea>
+          </div>
+
+          <input type="hidden" name="_subject" value="Get Involved - Interest Form">
+
+          <button
+            type="submit"
+            class="btn-primary w-full"
+            data-testid="interest-submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+</article>
+{{ end }}

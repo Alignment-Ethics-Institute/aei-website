@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title -->
+<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+
+<!-- Description -->
+{{ with .Description }}
+<meta name="description" content="{{ . }}">
+{{ else }}
+{{ with .Site.Params.description }}
+<meta name="description" content="{{ . }}">
+{{ end }}
+{{ end }}
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Site.Params.description }}
+<meta property="og:description" content="{{ . }}">
+{{ end }}
+{{ with .Site.Params.ogImage }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+{{ with .Site.Params.description }}
+<meta name="twitter:description" content="{{ . }}">
+{{ end }}
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+<!-- Stylesheet -->
+{{ $css := resources.Get "css/compiled.css" }}
+{{ if $css }}
+<link rel="stylesheet" href="{{ $css.Permalink }}">
+{{ end }}

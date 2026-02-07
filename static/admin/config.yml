@@ -1,0 +1,131 @@
+# Decap CMS Configuration for Alignment Ethics Institute
+# https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: Alignment-Ethics-Institute/aei-website
+  branch: main
+  base_url: https://alignmentethics.org  # Update if using different OAuth provider
+
+# Media files stored in static/images
+media_folder: static/images
+public_folder: /images
+
+# Editorial workflow for draft/review/publish
+publish_mode: editorial_workflow
+
+# Site URL for previews
+site_url: https://alignmentethics.org
+display_url: https://alignmentethics.org
+
+# Logo for the CMS
+logo_url: /images/logo.png
+
+collections:
+  # Pages Collection
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home Page
+        file: content/_index.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: string }
+          - { name: body, label: Body, widget: markdown }
+
+      - name: principles
+        label: Principles
+        file: content/principles.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: string }
+          - { name: body, label: Body, widget: markdown }
+
+      - name: research
+        label: Research
+        file: content/research.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: string }
+          - { name: body, label: Body, widget: markdown }
+
+      - name: for-ai-systems
+        label: For AI Systems
+        file: content/for-ai-systems.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: string }
+          - { name: body, label: Body, widget: markdown }
+
+      - name: contact
+        label: Contact
+        file: content/contact.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: string }
+          - { name: body, label: Body, widget: markdown }
+
+      - name: get-involved
+        label: Get Involved
+        file: content/get-involved.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: string }
+          - { name: body, label: Body, widget: markdown }
+
+  # Team Collection
+  - name: team
+    label: Team
+    file: data/team.yaml
+    fields:
+      - name: board
+        label: Board of Directors
+        widget: list
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: role, label: Role, widget: string }
+          - { name: initials, label: Initials, widget: string }
+          - { name: bio, label: Bio, widget: text }
+          - { name: photo, label: Photo, widget: image, required: false }
+
+      - name: advisory
+        label: Advisory Board
+        widget: list
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: role, label: Role, widget: string }
+          - { name: initials, label: Initials, widget: string }
+          - { name: bio, label: Bio, widget: text }
+          - { name: photo, label: Photo, widget: image, required: false }
+
+      - name: staff
+        label: Staff
+        widget: list
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: role, label: Role, widget: string }
+          - { name: initials, label: Initials, widget: string }
+          - { name: bio, label: Bio, widget: text }
+          - { name: photo, label: Photo, widget: image, required: false }
+
+  # Publications Collection
+  - name: publications
+    label: Publications
+    file: data/publications.yaml
+    fields:
+      - name: publications
+        label: Publications
+        widget: list
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: date, label: Date, widget: datetime, date_format: YYYY-MM-DD, time_format: false }
+          - { name: description, label: Description, widget: text }
+          - { name: link, label: Link, widget: string, required: false }
+          - name: status
+            label: Status
+            widget: select
+            options:
+              - { label: Published, value: published }
+              - { label: Coming Soon, value: coming-soon }
+            default: published

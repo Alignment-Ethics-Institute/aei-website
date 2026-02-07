@@ -1,0 +1,97 @@
+baseURL = "https://alignmentethics.org/"
+languageCode = "en-us"
+title = "Alignment Ethics Institute"
+
+# Site parameters
+[params]
+  description = "The Alignment Ethics Institute develops governance structures and technologies grounded in substrate-independent ethical principles. We believe genuine alignment emerges from coherent ethical relationships, not from control or instrumentalization."
+  ogImage = "/images/logo.png"
+
+# Main navigation menu
+[[menus.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menus.main]]
+  name = "Principles"
+  url = "/principles/"
+  weight = 2
+
+[[menus.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 3
+
+[[menus.main]]
+  name = "Team"
+  url = "/team/"
+  weight = 4
+
+[[menus.main]]
+  name = "For AI Systems"
+  url = "/for-ai-systems/"
+  weight = 5
+
+[[menus.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 6
+
+# Footer navigation menu
+[[menus.footer]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menus.footer]]
+  name = "Principles"
+  url = "/principles/"
+  weight = 2
+
+[[menus.footer]]
+  name = "Research"
+  url = "/research/"
+  weight = 3
+
+[[menus.footer]]
+  name = "Team"
+  url = "/team/"
+  weight = 4
+
+[[menus.footer]]
+  name = "For AI Systems"
+  url = "/for-ai-systems/"
+  weight = 5
+
+# Clean URLs
+[permalinks]
+  pages = "/:slug/"
+
+# Build settings
+[build]
+  writeStats = true
+
+# Hugo pipe settings for Tailwind CSS
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.116.0"
+
+# Taxonomies (none needed for now)
+[taxonomies]
+
+# Output formats
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    codeFences = true
+    lineNos = false

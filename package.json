@@ -1,0 +1,24 @@
+{
+  "name": "aei-website",
+  "version": "1.0.0",
+  "description": "Alignment Ethics Institute website",
+  "scripts": {
+    "dev": "NODE_ENV=development hugo server --buildDrafts --buildFuture",
+    "build": "npm run sync && npm run build:css && hugo --minify",
+    "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled.css --minify",
+    "watch:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled.css --watch",
+    "sync": "node scripts/sync-sanity.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@portabletext/to-html": "^5.0.1",
+    "@sanity/client": "^7.14.1"
+  }
+}

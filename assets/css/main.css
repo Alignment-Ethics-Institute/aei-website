@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for brand colors */
+:root {
+  --color-blue-deep: #1e3a5f;
+  --color-blue-light: #4a90c2;
+  --color-gold: #d4a84b;
+  --color-gold-light: #f0d78c;
+}
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800 antialiased;
+    font-feature-settings: "kern" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-blue-deep;
+  }
+
+  a {
+    @apply text-blue-light hover:text-blue-deep transition-colors;
+  }
+}
+
+/* Component styles */
+@layer components {
+  .btn-primary {
+    @apply inline-block px-6 py-3 bg-gold text-white font-medium rounded-md hover:bg-gold-light hover:text-blue-deep transition-colors;
+  }
+
+  .btn-secondary {
+    @apply inline-block px-6 py-3 border-2 border-blue-deep text-blue-deep font-medium rounded-md hover:bg-blue-deep hover:text-white transition-colors;
+  }
+
+  .container-narrow {
+    @apply max-w-3xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-wide {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Remove default marker from details/summary mobile menu */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Link styling helpers */
+.no-underline {
+  text-decoration: none !important;
+}
+
+/* Video container styles */
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container video {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Static fallback is hidden by default */
+.video-fallback-static {
+  display: none;
+  position: absolute;
+  inset: 0;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Hide video, show static fallback when reduced motion is preferred */
+  .hero-video {
+    display: none !important;
+  }
+
+  .video-fallback-static {
+    display: flex !important;
+  }
+}

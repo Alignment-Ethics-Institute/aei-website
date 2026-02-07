@@ -1,0 +1,115 @@
+{{ define "main" }}
+<article class="py-12 md:py-20">
+  <div class="container-narrow">
+    <header class="mb-12 text-center">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-deep mb-4" data-testid="page-title">
+        {{ .Title }}
+      </h1>
+      {{ with .Params.subtitle }}
+      <p class="text-lg text-gray-600">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    {{ with .Content }}
+    <div class="prose prose-lg mx-auto text-gray-700 mb-12 text-center" data-testid="page-content">
+      {{ . }}
+    </div>
+    {{ end }}
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <!-- Contact Information -->
+      <div data-testid="contact-info">
+        <h2 class="text-xl font-semibold text-blue-deep mb-6">Contact Information</h2>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-deep/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-900">Email</h3>
+              <a href="mailto:contact@alignmentethics.org" class="text-blue-light hover:text-blue-deep no-underline">
+                contact@alignmentethics.org
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-deep/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-900">Location</h3>
+              <p class="text-gray-600">British Columbia, Canada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div data-testid="contact-form">
+        <h2 class="text-xl font-semibold text-blue-deep mb-6">Send a Message</h2>
+
+        <!-- Contact Form - Replace YOUR_FORM_ID with actual Formspree form ID -->
+        <form action="https://formspree.io/f/xreknorq" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your name"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-light focus:border-blue-light outline-none transition-colors"
+              data-testid="contact-name"
+            >
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your@email.com"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-light focus:border-blue-light outline-none transition-colors"
+              data-testid="contact-email"
+            >
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="How can we help?"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-light focus:border-blue-light outline-none transition-colors resize-none"
+              data-testid="contact-message"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn-primary w-full"
+            data-testid="contact-submit"
+          >
+            Send Message
+          </button>
+
+          <p class="text-xs text-gray-500 text-center mt-2">
+            We respect your privacy. No tracking, no spam.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}

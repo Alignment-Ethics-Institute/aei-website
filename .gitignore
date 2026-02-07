@@ -1,0 +1,28 @@
+# Hugo build output
+public/
+resources/_gen/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# Ralph internals
+.ralph/
+
+# Test results
+test-results/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Ralph prompt
+PROMPT.md
