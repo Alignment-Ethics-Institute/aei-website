@@ -14,11 +14,13 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply text-gray-800 antialiased;
     font-feature-settings: "kern" 1;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -34,10 +36,12 @@
 @layer components {
   .btn-primary {
     @apply inline-block px-6 py-3 bg-gold text-white font-medium rounded-md hover:bg-gold-light hover:text-blue-deep transition-colors;
+    min-height: 44px;
   }
 
   .btn-secondary {
     @apply inline-block px-6 py-3 border-2 border-blue-deep text-blue-deep font-medium rounded-md hover:bg-blue-deep hover:text-white transition-colors;
+    min-height: 44px;
   }
 
   .container-narrow {
@@ -63,7 +67,17 @@ details > summary::-webkit-details-marker {
   text-decoration: none !important;
 }
 
-/* Video container styles */
+/* Touch-friendly tap targets for mobile nav */
+@media (max-width: 767px) {
+  nav a,
+  nav summary {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Video container styles (kept for CSS purge safety) */
 .video-container {
   position: relative;
   overflow: hidden;
@@ -101,7 +115,6 @@ details > summary::-webkit-details-marker {
     scroll-behavior: auto !important;
   }
 
-  /* Hide video, show static fallback when reduced motion is preferred */
   .hero-video {
     display: none !important;
   }
