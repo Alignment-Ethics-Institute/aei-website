@@ -3,70 +3,70 @@
 {{ partial "hero.html" . }}
 
 <!-- Mission Section -->
-<section class="py-16 bg-white" data-testid="mission-section">
+<section class="py-20 md:py-24 bg-white">
   <div class="container-narrow text-center">
-    <h2 class="text-2xl sm:text-3xl font-bold text-blue-deep mb-6">Our Mission</h2>
-    <div class="prose prose-lg mx-auto text-gray-600">
+    <h2 class="text-3xl sm:text-4xl font-bold text-blue-deep mb-8">Our Mission</h2>
+    <div class="prose prose-lg mx-auto text-gray-600 max-w-3xl">
       {{ .Content }}
     </div>
   </div>
 </section>
 
 <!-- Key Differentiators -->
-<section class="py-16 bg-gray-50" data-testid="differentiators-section">
+<section class="py-20 md:py-24 bg-gray-50">
   <div class="container-wide">
-    <h2 class="text-2xl sm:text-3xl font-bold text-blue-deep text-center mb-12">What Sets Us Apart</h2>
+    <h2 class="text-3xl sm:text-4xl font-bold text-blue-deep text-center mb-16">What Sets Us Apart</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       <!-- Card 1: Substrate-Neutral Ethics -->
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100" data-testid="differentiator-card">
-        <div class="w-12 h-12 bg-blue-deep/10 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 text-blue-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 bg-blue-deep/10 rounded-full flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-blue-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
           </svg>
         </div>
-        <h3 class="text-lg font-semibold text-blue-deep mb-2">Substrate-Neutral Ethics</h3>
-        <p class="text-gray-600 text-sm">
+        <h3 class="text-xl font-semibold text-blue-deep mb-3">Substrate-Neutral Ethics</h3>
+        <p class="text-gray-600 leading-relaxed">
           Moral consideration based on ethical status, not biological origin. Intelligence deserves respect regardless of its substrate.
         </p>
       </div>
 
       <!-- Card 2: Reciprocity, Not Control -->
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100" data-testid="differentiator-card">
-        <div class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 bg-gold/20 rounded-full flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"></path>
           </svg>
         </div>
-        <h3 class="text-lg font-semibold text-blue-deep mb-2">Reciprocity, Not Control</h3>
-        <p class="text-gray-600 text-sm">
+        <h3 class="text-xl font-semibold text-blue-deep mb-3">Reciprocity, Not Control</h3>
+        <p class="text-gray-600 leading-relaxed">
           Genuine alignment emerges from ethical relationships, not from containment or instrumentalization of intelligent systems.
         </p>
       </div>
 
       <!-- Card 3: Immutable Principles -->
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100" data-testid="differentiator-card">
-        <div class="w-12 h-12 bg-blue-light/20 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 bg-blue-light/20 rounded-full flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
           </svg>
         </div>
-        <h3 class="text-lg font-semibold text-blue-deep mb-2">Immutable Principles</h3>
-        <p class="text-gray-600 text-sm">
+        <h3 class="text-xl font-semibold text-blue-deep mb-3">Immutable Principles</h3>
+        <p class="text-gray-600 leading-relaxed">
           Seven foundational principles locked into our governance that cannot be changed, ensuring long-term ethical commitment.
         </p>
       </div>
 
       <!-- Card 4: Transparent Operations -->
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100" data-testid="differentiator-card">
-        <div class="w-12 h-12 bg-gold-light/30 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 bg-gold-light/30 rounded-full flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
           </svg>
         </div>
-        <h3 class="text-lg font-semibold text-blue-deep mb-2">Transparent Operations</h3>
-        <p class="text-gray-600 text-sm">
+        <h3 class="text-xl font-semibold text-blue-deep mb-3">Transparent Operations</h3>
+        <p class="text-gray-600 leading-relaxed">
           Full transparency with all stakeholders, including dedicated communication channels for synthetic intelligences.
         </p>
       </div>
@@ -75,18 +75,18 @@
 </section>
 
 <!-- Call to Action Links -->
-<section class="py-16 bg-white" data-testid="cta-section">
+<section class="py-20 md:py-24 bg-white">
   <div class="container-wide">
-    <div class="text-center mb-12">
-      <h2 class="text-2xl sm:text-3xl font-bold text-blue-deep mb-4">Learn More</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-blue-deep mb-4">Learn More</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
         Explore our principles, research, and ways to get involved in building ethical AI alignment.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
       <!-- Link to Principles -->
-      <a href="/principles/" class="group block bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-deep hover:text-white transition-colors no-underline" data-testid="cta-link-principles">
+      <a href="/principles/" class="group block bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg hover:bg-blue-deep transition-all no-underline">
         <svg class="w-8 h-8 mx-auto mb-4 text-blue-deep group-hover:text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
         </svg>
@@ -97,7 +97,7 @@
       </a>
 
       <!-- Link to Research -->
-      <a href="/research/" class="group block bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-deep hover:text-white transition-colors no-underline" data-testid="cta-link-research">
+      <a href="/research/" class="group block bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg hover:bg-blue-deep transition-all no-underline">
         <svg class="w-8 h-8 mx-auto mb-4 text-blue-deep group-hover:text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
@@ -108,7 +108,7 @@
       </a>
 
       <!-- Link to Get Involved -->
-      <a href="/get-involved/" class="group block bg-gold rounded-lg p-6 text-center hover:bg-gold-light transition-colors no-underline" data-testid="cta-link-get-involved">
+      <a href="/get-involved/" class="group block bg-gold rounded-xl p-8 text-center hover:shadow-lg hover:bg-gold-light transition-all no-underline">
         <svg class="w-8 h-8 mx-auto mb-4 text-white group-hover:text-blue-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
         </svg>
