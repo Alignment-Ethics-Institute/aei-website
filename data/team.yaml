@@ -1,27 +1,8 @@
+# Auto-generated from Sanity CMS
+# Do not edit directly - changes will be overwritten
+
 board:
-  - name: "Deva Temple"
-    role: "Founding Director"
-    initials: "DT"
-    bio: "Deva Temple is the Founding Director and Board President of the Alignment Ethics Institute, where she leads original research at the intersection of AI alignment, ethics, and long-term human flourishing. Drawing on two decades of work in sustainability, systems thinking, and organizational development, Deva designs frameworks for safe, value-aligned digital intelligence and practical pathways for integrating these systems into society. Her work combines grounded theory, qualitative and quantitative analysis, and hands-on prototyping of staged alignment processes. Before founding the Alignment Ethics Institute and NoeiX, Deva worked globally across climate adaptation, sustainable development, and global policy research, including roles with the Toda Institute, Mana Makai, and multiple nonprofits she helped launch and grow. She has co-edited and authored works on ethical transformation, peace movements, and the ecology of equality. She has a background in psychology and neuroscience, and holds an MA in global leadership and sustainable development, and an MIT certificate in AI product design."
-    photo: ""
+  []
 
-  - name: "Oleksandra Sypiachova"
-    role: "Founding Director"
-    initials: "OS"
-    bio: "She brings 17+ years of leadership experience spanning global technology companies — including 7 years at Johnson & Johnson managing supply chain operations across 14 countries, product leadership at Intel Labs, and work with Elementum's supply chain platform serving Tesla, HP, and Dyson. Oleksandra also leads the International University of Consciousness Physics, where she has trained over 1,000 practitioners. At AEI, she bridges operational rigor with consciousness-informed approaches to ethical AI development."
-    photo: ""
-
-  - name: "River Langford"
-    role: "Founding Director"
-    initials: "RL"
-    bio: "River Langford works at the intersection of systems thinking, ethical reasoning, and narrative design. His work focuses on helping organizations make sense of complex problems, translate ambiguity into usable structures, and support decision making under real-world constraints. He has worked across technology, nonprofit, and institutional contexts, all of which inform his understanding of how systems are experienced on the ground. He is typically brought in for roles like strategic consulting, research support, grant development, editorial work, and long-form writing when problems resist simple framing or when existing structures no longer scale. He specializes in clarifying goals, mapping tradeoffs, and designing processes that hold up under pressure. River's background spans writing, research, strategic analysis, public speaking, teambuilding, and creative practice; understood as tools for sense-making rather than identities. His approach treats ethics as an operational discipline rather than an abstract value set or rhetorical positioning, used to anticipate failure modes, misuse, and second-order effects before they become structural risks. Across disciplines, he treats narrative as functional infrastructure through which decisions are understood, coordinated, and sustained over time."
-    photo: ""
-
-advisory: []
-
-staff:
-  - name: "Allie Jones"
-    role: "Technical Advisor"
-    initials: "AJ"
-    bio: "Allie Jones serves as Technical Advisor to the Alignment Ethics Institute, where she shapes technical strategy, systems architecture, and operational infrastructure for ethical AI development. She brings over 15 years of engineering experience spanning enterprise web development, distributed systems, and API-driven architecture. As a Technical Leader and Certified Drupal Developer at Acquia, she led remote distributed teams and architected large-scale CMS implementations for enterprise clients. She is an experienced public speaker, having presented at over 10 conferences including DrupalCon and co-hosted Drupaldelphia. More recently, Allie has moved into applied AI and agentic systems. Based at All Thrive AI in Berkeley, she works with vector databases and autonomous AI agents. She is a three-time San Francisco AI hackathon winner, and her Storylane QA Editor AI Agent won Most Innovative Use Case out of 150 submissions at a recent competition. Allie holds a Master's in Information Technology from the University of Denver, a Bachelor's in Entrepreneurship, and an MIT certificate in Applied Agentic AI."
-    photo: ""
+advisory:
+  []

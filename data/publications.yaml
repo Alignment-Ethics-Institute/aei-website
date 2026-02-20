@@ -1,1 +1,10 @@
-publications: []
+# Auto-generated from Sanity CMS
+# Do not edit directly - changes will be overwritten
+
+publications:
+  - title: "Test"
+    date: "2026-02-02"
+    description: "Testing"
+    link: "/publications/test/"
+    status: "published"
+    featured: false
