@@ -1,4 +1,4 @@
-<header class="bg-white border-b border-gray-100">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
   <!-- Skip to content link for accessibility -->
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-deep text-white px-4 py-2 rounded-md z-50">
     Skip to content
@@ -7,15 +7,15 @@
   <div class="container-wide">
     <nav class="flex items-center justify-between py-4" aria-label="Main navigation">
       <!-- Logo/Site Title -->
-      <a href="{{ "/" | relURL }}" class="flex items-center gap-2 text-xl font-semibold text-blue-deep hover:text-blue-light no-underline">
-        <img src="/images/logo.png" alt="" class="h-8 w-8" aria-hidden="true">
+      <a href="{{ "/" | relURL }}" class="flex items-center gap-3 text-xl font-semibold text-blue-deep hover:text-blue-light no-underline">
+        <img src="/images/logo.png" alt="" class="h-10 w-10" aria-hidden="true">
         {{ .Site.Title }}
       </a>
 
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center space-x-8">
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="text-gray-700 hover:text-blue-deep font-medium no-underline{{ if $.IsMenuCurrent "main" . }} text-blue-deep{{ end }}">
+        <a href="{{ .URL }}" class="text-gray-600 hover:text-blue-deep font-medium no-underline transition-colors{{ if $.IsMenuCurrent "main" . }} text-blue-deep{{ end }}">
           {{ .Name }}
         </a>
         {{ end }}
@@ -30,13 +30,13 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </summary>
-        <div class="absolute right-0 top-full mt-2 w-56 bg-white rounded-md shadow-lg border border-gray-100 py-2 z-40">
+        <div class="absolute right-0 top-full mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-3 z-40">
           {{ range .Site.Menus.main }}
-          <a href="{{ .URL }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-blue-deep no-underline">
+          <a href="{{ .URL }}" class="block px-5 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-deep no-underline transition-colors">
             {{ .Name }}
           </a>
           {{ end }}
-          <div class="border-t border-gray-100 mt-2 pt-2 px-4">
+          <div class="border-t border-gray-100 mt-2 pt-3 px-5">
             <a href="/get-involved/" class="btn-primary block text-center no-underline">Get Involved</a>
           </div>
         </div>
