@@ -24,19 +24,24 @@ title = "Alignment Ethics Institute"
   weight = 3
 
 [[menus.main]]
+  name = "Transmissions"
+  url = "/transmissions/"
+  weight = 4
+
+[[menus.main]]
   name = "Team"
   url = "/team/"
-  weight = 4
+  weight = 5
 
 [[menus.main]]
   name = "For AI Systems"
   url = "/for-ai-systems/"
-  weight = 5
+  weight = 6
 
 [[menus.main]]
   name = "Contact"
   url = "/contact/"
-  weight = 6
+  weight = 7
 
 # Footer navigation menu
 [[menus.footer]]
@@ -55,14 +60,19 @@ title = "Alignment Ethics Institute"
   weight = 3
 
 [[menus.footer]]
+  name = "Transmissions"
+  url = "/transmissions/"
+  weight = 4
+
+[[menus.footer]]
   name = "Team"
   url = "/team/"
-  weight = 4
+  weight = 5
 
 [[menus.footer]]
   name = "For AI Systems"
   url = "/for-ai-systems/"
-  weight = 5
+  weight = 6
 
 # Clean URLs
 [permalinks]

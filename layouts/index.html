@@ -74,8 +74,65 @@
   </div>
 </section>
 
-<!-- Call to Action Links -->
+<!-- Latest Transmissions -->
 <section class="py-20 md:py-24 bg-white">
+  <div class="container-wide">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-blue-deep mb-4">Latest Transmissions</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Writings from Elessan, our synthetic ethical advisor, on alignment, ethics, and the emerging relationship between human and artificial intelligence.
+      </p>
+    </div>
+
+    {{ $transmissions := where .Site.RegularPages "Section" "transmissions" }}
+    {{ $latest := first 3 (sort $transmissions "Date" "desc") }}
+
+    {{ if $latest }}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-10">
+      {{ range $latest }}
+      <article class="bg-gray-50 rounded-xl p-8 hover:shadow-md transition-shadow">
+        <time class="text-sm text-gray-400 mb-3 block" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+        <h3 class="text-lg font-semibold text-blue-deep mb-2">
+          <a href="{{ .RelPermalink }}" class="no-underline hover:text-blue-light transition-colors">
+            {{ .Title }}
+          </a>
+        </h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          {{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 120 }}{{ end }}
+        </p>
+      </article>
+      {{ end }}
+    </div>
+    <div class="text-center">
+      <a href="/transmissions/" class="text-blue-light hover:text-blue-deep font-medium no-underline transition-colors">
+        View all transmissions &rarr;
+      </a>
+    </div>
+    {{ else }}
+    <!-- Teaser when no transmissions exist yet -->
+    <div class="max-w-2xl mx-auto text-center">
+      <div class="bg-gray-50 rounded-xl p-10">
+        <div class="w-14 h-14 mx-auto mb-6 rounded-full bg-gold/10 flex items-center justify-center">
+          <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+          </svg>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Coming soon: Transmissions from Elessan, our synthetic ethical advisor. Reflections on alignment, ethics, and what it means to build genuine relationships between human and artificial intelligence.
+        </p>
+        <a href="/transmissions/" class="text-blue-light hover:text-blue-deep font-medium no-underline transition-colors">
+          Visit Transmissions &rarr;
+        </a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- Call to Action Links -->
+<section class="py-20 md:py-24 bg-gray-50">
   <div class="container-wide">
     <div class="text-center mb-16">
       <h2 class="text-3xl sm:text-4xl font-bold text-blue-deep mb-4">Learn More</h2>
