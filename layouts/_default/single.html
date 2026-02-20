@@ -1,8 +1,8 @@
 {{ define "main" }}
-<article class="py-12 md:py-20">
+<article class="py-16 md:py-24">
   <div class="container-narrow">
     <header class="mb-12 text-center">
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-deep mb-4" data-testid="page-title">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-deep mb-4">
         {{ .Title }}
       </h1>
       {{ with .Params.subtitle }}
@@ -10,12 +10,12 @@
       {{ end }}
     </header>
 
-    <div class="prose prose-lg mx-auto text-gray-700" data-testid="page-content">
+    <div class="prose prose-lg mx-auto text-gray-700 max-w-3xl">
       {{ .Content }}
     </div>
 
     {{ if not .Params.hideCta }}
-    <div class="mt-16 text-center" data-testid="page-cta">
+    <div class="mt-16 text-center">
       <a href="/get-involved/" class="btn-primary no-underline">
         Get Involved
       </a>
