@@ -43,5 +43,5 @@
 <!-- Stylesheet -->
 {{ $css := resources.Get "css/compiled.css" }}
 {{ if $css }}
-<link rel="stylesheet" href="{{ $css.Permalink }}">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 {{ end }}

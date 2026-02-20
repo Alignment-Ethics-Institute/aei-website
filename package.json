@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Alignment Ethics Institute website",
   "scripts": {
-    "dev": "NODE_ENV=development hugo server --buildDrafts --buildFuture",
+    "dev": "npm run build:css && NODE_ENV=development hugo server --buildDrafts --buildFuture",
     "build": "npm run sync && npm run build:css && hugo --minify",
     "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled.css --minify",
     "watch:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled.css --watch",
