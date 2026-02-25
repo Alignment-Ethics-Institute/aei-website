@@ -15,9 +15,30 @@
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center space-x-8">
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="text-gray-600 hover:text-blue-deep font-medium no-underline transition-colors{{ if $.IsMenuCurrent "main" . }} text-blue-deep{{ end }}">
-          {{ .Name }}
-        </a>
+          {{ if .HasChildren }}
+          <!-- Dropdown menu item -->
+          <div class="relative group">
+            <a href="{{ .URL }}" class="text-gray-600 hover:text-blue-deep font-medium no-underline transition-colors inline-flex items-center gap-1{{ if $.IsMenuCurrent "main" . }} text-blue-deep{{ end }}">
+              {{ .Name }}
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <div class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div class="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
+                {{ range .Children }}
+                <a href="{{ .URL }}" class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-blue-deep no-underline transition-colors">
+                  {{ .Name }}
+                </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+          {{ else }}
+          <a href="{{ .URL }}" class="text-gray-600 hover:text-blue-deep font-medium no-underline transition-colors{{ if $.IsMenuCurrent "main" . }} text-blue-deep{{ end }}">
+            {{ .Name }}
+          </a>
+          {{ end }}
         {{ end }}
         <a href="/get-involved/" class="btn-primary no-underline">Get Involved</a>
       </div>
@@ -32,9 +53,24 @@
         </summary>
         <div class="absolute right-0 top-full mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-3 z-40">
           {{ range .Site.Menus.main }}
-          <a href="{{ .URL }}" class="block px-5 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-deep no-underline transition-colors">
-            {{ .Name }}
-          </a>
+            {{ if .HasChildren }}
+            <div class="px-5 py-2">
+              <a href="{{ .URL }}" class="block text-gray-600 hover:text-blue-deep no-underline transition-colors font-medium">
+                {{ .Name }}
+              </a>
+              <div class="ml-4 mt-1 space-y-1">
+                {{ range .Children }}
+                <a href="{{ .URL }}" class="block py-1.5 text-sm text-gray-500 hover:text-blue-deep no-underline transition-colors">
+                  {{ .Name }}
+                </a>
+                {{ end }}
+              </div>
+            </div>
+            {{ else }}
+            <a href="{{ .URL }}" class="block px-5 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-deep no-underline transition-colors">
+              {{ .Name }}
+            </a>
+            {{ end }}
           {{ end }}
           <div class="border-t border-gray-100 mt-2 pt-3 px-5">
             <a href="/get-involved/" class="btn-primary block text-center no-underline">Get Involved</a>

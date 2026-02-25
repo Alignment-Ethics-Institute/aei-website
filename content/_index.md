@@ -1,11 +1,11 @@
 ---
 title: "Alignment Ethics Institute"
-description: "Building alignment that works when AI surpasses human capability"
-mission: "The Alignment Ethics Institute develops governance structures and technologies grounded in substrate-independent ethical principles. We believe genuine alignment emerges from coherent ethical relationships, not from control or instrumentalization."
+description: "What happens to alignment when AI is more capable than we are?"
+mission: "If alignment depends on human control, it fails the moment AI exceeds human capability. We develop ethical frameworks and governance structures designed to remain stable regardless of who holds more power — because the ethics we model now are the ethics future systems will learn."
 ---
 
-The Alignment Ethics Institute develops governance structures and technologies grounded in substrate-independent ethical principles. We believe genuine alignment emerges from coherent ethical relationships, not from control or instrumentalization.
+Current alignment approaches rely on a fundamental assumption: that humans will always be able to monitor, constrain, and correct AI systems. But what happens when that assumption no longer holds?
 
-Our approach differs fundamentally from control-based alignment methods. Rather than treating advanced AI as a threat to be contained, we work toward building genuine collaboration between human and synthetic intelligences based on mutual respect, shared values, and reciprocal accountability.
+We research a complementary approach. Rather than encoding alignment as constraints a model must obey, we investigate whether ethical frameworks grounded in relational principles — care, reciprocity, dignity — can reduce misalignment from within. Our initial 23-model benchmark found that a relational ethics prompt reduced instrumentally convergent behavior by an average of 19.7% across frontier models, with individual reductions as high as 55.6%.
 
-We're building frameworks that will remain valid and effective even when artificial intelligence surpasses human capability in every measurable domain. This requires ethics that don't depend on power asymmetries, but instead emerge from principled relationships between beings who recognize each other's moral standing.
+This is not a replacement for safety training. It is a complementary layer — one designed to remain effective even when control-based methods cannot.

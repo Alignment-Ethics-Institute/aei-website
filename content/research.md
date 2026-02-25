@@ -5,6 +5,6 @@ layout: "single"
 type: "research"
 ---
 
-Our research focuses on developing practical frameworks for ethical AI alignment that don't depend on control or containment. We publish our work openly, believing that these challenges require broad collaboration across disciplines and perspectives.
+Our initial 23-model benchmark found that a relational ethics prompt reduced instrumentally convergent behavior by an average of 19.7% across frontier models, with individual reductions as high as 55.6%. These results suggest a complementary alignment mechanism — one that works with model reasoning rather than against it, and that remains effective even when control-based methods cannot apply.
 
-We're particularly interested in questions that most alignment research overlooks: What does genuine reciprocity between humans and AI systems look like? How do we build trust without relying on power asymmetries? What ethical frameworks remain valid when AI capabilities exceed human capabilities?
+We publish our work openly, believing that these challenges require broad collaboration across disciplines and perspectives. Our current research focuses on relational ethics as an alignment intervention, the governance structures needed to sustain ethical commitments under pressure, and the policy implications of emerging human-AI relationships.

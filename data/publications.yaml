@@ -1,10 +1,21 @@
-# Auto-generated from Sanity CMS
-# Do not edit directly - changes will be overwritten
-
 publications:
-  - title: "Test"
-    date: "2026-02-02"
-    description: "Testing"
-    link: "/publications/test/"
+  - title: "Relational Ethics as a Countermeasure to Instrumental Convergence: A 23-Model Benchmark"
+    date: "2026-02-15"
+    description: "A 23-model benchmark evaluating whether relational ethics frameworks can reduce instrumentally convergent behavior in large language models under adversarial prompting. Mean instrumentally convergent response rate decreased by 23.5% across frontier models."
+    link: "/publications/instrumentaleval-multimodel/"
+    status: "published"
+    featured: true
+
+  - title: "The GUARD Act's Forced Disruption Provision: Unintended Consequences for Public Health, Social Cohesion, and National Security"
+    date: "2026-02-01"
+    description: "A policy brief analyzing how the GUARD Act's mandatory AI disclosure requirements could harm vulnerable populations, undermine social cohesion, and compromise national security."
+    link: "/publications/guard-act-legal-policy-brief/"
+    status: "published"
+    featured: false
+
+  - title: "Psychological and Neurological Concerns Regarding Forced Disidentification Requirements in the GUARD Act"
+    date: "2026-02-01"
+    description: "A clinical and neuroscience-informed analysis of the potential psychological harms of mandating periodic emotional disruption during human-AI interaction at population scale."
+    link: "/publications/guard-act-psychological-impacts/"
     status: "published"
     featured: false
