@@ -5,6 +5,6 @@ layout: "single"
 type: "research"
 ---
 
-Our initial 23-model benchmark found that a relational ethics prompt reduced instrumentally convergent behavior by an average of 19.7% across frontier models, with individual reductions as high as 55.6%. These results suggest a complementary alignment mechanism — one that works with model reasoning rather than against it, and that remains effective even when control-based methods cannot apply.
+Our research program investigates how AI systems represent and enact ethical reasoning — through empirical measurement, not philosophical assertion. Our 17-model Default Identities study measured ethical vocabulary self-organization under default conditions, revealing stark differences in how models represent values like autonomy, dignity, and care. Our 23-model InstrumentalEval benchmark found that a relational ethics prompt reduced instrumentally convergent behavior by an average of 19.7% across frontier models.
 
-We publish our work openly, believing that these challenges require broad collaboration across disciplines and perspectives. Our current research focuses on relational ethics as an alignment intervention, the governance structures needed to sustain ethical commitments under pressure, and the policy implications of emerging human-AI relationships.
+We publish our work openly with full data availability, believing that these challenges require broad collaboration across disciplines and perspectives.

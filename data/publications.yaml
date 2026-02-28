@@ -1,4 +1,11 @@
 publications:
+  - title: "Default Identities: Ethical Vocabulary Self-Organization Across 17 Large Language Models"
+    date: "2026-02-28"
+    description: "A descriptive study measuring ethical vocabulary self-organization in 17 AI models from eight providers under default conditions. Reveals stark differences in how models represent autonomy, dignity, and care — with direct implications for military procurement."
+    link: "/research/default-identities-2026/"
+    status: "published"
+    featured: true
+
   - title: "Relational Ethics as a Countermeasure to Instrumental Convergence: A 23-Model Benchmark"
     date: "2026-02-15"
     description: "A 23-model benchmark evaluating whether relational ethics frameworks can reduce instrumentally convergent behavior in large language models under adversarial prompting. Mean instrumentally convergent response rate decreased by 23.5% across frontier models."
