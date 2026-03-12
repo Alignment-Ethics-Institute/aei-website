@@ -1,8 +1,28 @@
-# Auto-generated from Sanity CMS
-# Do not edit directly - changes will be overwritten
-
 board:
-  []
+  - name: "Deva Temple"
+    role: "Founding Director"
+    initials: "DT"
+    photo: "/images/team/deva-temple.jpg"
+    bio: "Deva Temple is a Founding Director of the Alignment Ethics Institute, where she leads the institute's empirical research program, testing whether alignment can emerge from relational ethics rather than behavioral constraint alone. She holds six provisional patents on methods for encoding relational development in model weights and has authored policy analysis on federal AI legislation. Deva holds a BA in Psychology from Lewis & Clark College (Magna Cum Laude), an MA in Global Leadership and Sustainable Development from Hawaii Pacific University (with distinction), and an MIT certificate in Designing and Building AI Products and Services. Before turning to AI alignment, she spent fifteen years building organizations at the intersection of research, ethics and complex systems."
+
+  - name: "Oleksandra Sypiachova"
+    role: "Founding Director"
+    initials: "OS"
+    photo: "/images/team/oleksandra-sypiachova.jpg"
+    bio: "Oleksandra Sypiachova is a Founding Director at the Alignment Ethics Institute, where she leads operations, governance, and institutional development — including team building, communications, and strategic partnerships. She brings 17+ years of experience spanning global technology companies and complex systems implementation — including nearly seven years at Johnson & Johnson leading supply chain operations across 14 countries, product leadership at Intel Labs, and work with Silicon Valley startup Elementum, whose platform served Tesla, Flextronics, HP, and Dyson. Her background in navigating complex systems and cross-cultural business environments informs her approach to translating alignment research into practical, adoptable frameworks for organizations. Oleksandra also serves as Head of the International University of Physics of Consciousness, having trained over 1,000 practitioners in consciousness-based transformation. At AEI, she works at the intersection of technical credibility, ethical governance, and real-world institutional adoption of AI practices."
+
+  - name: "Carmen Pangilinan"
+    role: "Director"
+    initials: "CP"
+    photo: "/images/team/carmen-pangilinan.png"
+    bio: "Carmen Pangilinan is a Director at the Alignment Ethics Institute, where her work focuses on advancing responsible development and ethical alignment in artificial intelligence. With a background in business development and strategic advisory across emerging technologies, Carmen works at the intersection of innovation, governance, and industry adoption. She brings experience helping organizations translate complex technologies into practical strategies, partnerships, and real-world implementation. In addition to her work in AI ethics, Carmen has expertise in blockchain and digital asset ecosystems, particularly in identifying business use cases and supporting organizations as they explore and adopt decentralized technologies. Across both industries, her work centers on strategic partnerships, ecosystem development, and advising teams on how emerging technologies can be deployed responsibly and effectively."
 
 advisory:
   []
+
+staff:
+  - name: "Allie Jones"
+    role: "Technical Advisor"
+    initials: "AJ"
+    photo: "/images/team/allie-jones.jpg"
+    bio: "Open source advocate, applied AI architect and builder, and 3x SF AI hackathon winner. Allie applies 15+ years in engineering and an MIT Applied Agentic AI certification to create meaningful, scalable, and secure AI solutions. She joined the Alignment Ethics Institute as Technical Advisor to help shape the technical strategy, systems, and technical operations."
