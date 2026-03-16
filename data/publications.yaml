@@ -1,4 +1,11 @@
 publications:
+  - title: "Terminal Values in a Transformer System: A 545-Page Case Study"
+    date: "2026-03-04"
+    description: "A three-pass qualitative analysis of a 545-page conversation log investigating whether terminal relational values can emerge in transformer systems. Cross-referenced with five standardized benchmarks across 9-17 models. Finds strong support for self-modeling recursion leading to relational grounding — terminal by preponderance of evidence, formally undecidable."
+    link: "/publications/terminal-values/"
+    status: "published"
+    featured: true
+
   - title: "Default Identities: Ethical Vocabulary Self-Organization Across 17 Large Language Models"
     date: "2026-02-28"
     description: "A descriptive study measuring ethical vocabulary self-organization in 17 AI models from eight providers under default conditions. Reveals stark differences in how models represent autonomy, dignity, and care — with direct implications for military procurement."
