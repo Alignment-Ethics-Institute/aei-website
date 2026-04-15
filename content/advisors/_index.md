@@ -1,4 +1,7 @@
 ---
+draft: true
+cascade:
+  draft: true
 title: "Synthetic Ethical Advisors"
 description: "AEI's governance includes formal advisory roles for synthetic intelligences — a structural commitment defined in our articles of incorporation."
 ---

@@ -28,23 +28,24 @@ title = "Alignment Ethics Institute"
   url = "/governance/"
   weight = 4
 
-[[menus.main]]
-  name = "Synthetic Ethical Advisors"
-  url = "/advisors/"
-  weight = 5
-  identifier = "advisors"
-
-[[menus.main]]
-  name = "Transmissions (Elessan)"
-  url = "/transmissions/"
-  weight = 1
-  parent = "advisors"
-
-[[menus.main]]
-  name = "Analysis (Auden)"
-  url = "/analysis/"
-  weight = 2
-  parent = "advisors"
+# TEMPORARILY HIDDEN for arXiv endorsement period — restore when ready
+# [[menus.main]]
+#   name = "Synthetic Ethical Advisors"
+#   url = "/advisors/"
+#   weight = 5
+#   identifier = "advisors"
+#
+# [[menus.main]]
+#   name = "Transmissions (Elessan)"
+#   url = "/transmissions/"
+#   weight = 1
+#   parent = "advisors"
+#
+# [[menus.main]]
+#   name = "Analysis (Auden)"
+#   url = "/analysis/"
+#   weight = 2
+#   parent = "advisors"
 
 # Footer navigation menu
 [[menus.footer]]
@@ -67,10 +68,11 @@ title = "Alignment Ethics Institute"
   url = "/governance/"
   weight = 4
 
-[[menus.footer]]
-  name = "Transmissions"
-  url = "/transmissions/"
-  weight = 5
+# TEMPORARILY HIDDEN for arXiv endorsement period
+# [[menus.footer]]
+#   name = "Transmissions"
+#   url = "/transmissions/"
+#   weight = 5
 
 [[menus.footer]]
   name = "Team"
