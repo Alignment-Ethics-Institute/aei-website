@@ -1,0 +1,71 @@
+{{ define "main" }}
+<section class="py-12 md:py-20">
+  <div class="container-narrow">
+    <header class="mb-12 text-center">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-deep mb-4" data-testid="page-title">
+        {{ .Title }}
+      </h1>
+      {{ with .Content }}
+      <div class="prose prose-lg mx-auto text-gray-600">
+        {{ . }}
+      </div>
+      {{ end }}
+    </header>
+
+    <!-- News Posts -->
+    <div class="space-y-8" data-testid="news-list">
+      {{/* Sort featured posts to top, then by date */}}
+      {{ $featured := where .Pages ".Params.featured" true }}
+      {{ $regular := where .Pages ".Params.featured" "!=" true }}
+      {{ $sorted := union $featured $regular }}
+      {{ range $sorted }}
+      <article class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm" data-testid="news-card">
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3 text-sm">
+            {{ with .Params.date }}
+            <time class="text-gray-500" datetime="{{ . }}">
+              {{ dateFormat "January 2, 2006" . }}
+            </time>
+            {{ end }}
+            {{ with .Params.category }}
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-deep/10 text-blue-deep capitalize">
+              {{ replace . "-" " " }}
+            </span>
+            {{ end }}
+            {{ if .Params.featured }}
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gold/20 text-gold">
+              Featured
+            </span>
+            {{ end }}
+          </div>
+          <h2 class="text-lg font-semibold text-blue-deep">
+            <a href="{{ .Permalink }}" class="hover:text-blue-light no-underline">
+              {{ .Title }}
+            </a>
+          </h2>
+          {{ with .Params.description }}
+          <p class="text-gray-600 text-sm">{{ . | truncate 200 }}</p>
+          {{ end }}
+          <div>
+            <a href="{{ .Permalink }}" class="text-blue-light hover:text-blue-deep text-sm font-medium no-underline">
+              Read more &rarr;
+            </a>
+          </div>
+        </div>
+      </article>
+      {{ else }}
+      <div class="text-center py-12">
+        <p class="text-gray-500 text-lg mb-2">No news posts yet.</p>
+        <p class="text-gray-400 text-sm">Check back soon for updates from the Alignment Ethics Institute.</p>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="mt-16 text-center" data-testid="page-cta">
+      <a href="/get-involved/" class="btn-primary no-underline">
+        Get Involved
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -184,12 +184,144 @@ ${advisory.length > 0 ? advisory.map(m => `  - name: "${m.name || ''}"
   console.log(`  Wrote ${members.length} team members to data/team.yaml`)
 }
 
+async function syncPosts() {
+  console.log('Fetching news posts from Sanity...')
+
+  const posts = await client.fetch(`
+    *[_type == "post" && status != "draft"] | order(date desc) {
+      _id,
+      title,
+      "slug": slug.current,
+      date,
+      description,
+      content,
+      author,
+      category,
+      featured,
+      status
+    }
+  `)
+
+  const newsDir = path.join(__dirname, '..', 'content', 'news')
+  if (!fs.existsSync(newsDir)) {
+    fs.mkdirSync(newsDir, {recursive: true})
+  }
+
+  // Create _index.md for the news list page
+  const indexContent = `---
+title: "News"
+description: "Updates and announcements from the Alignment Ethics Institute"
+---
+
+Stay up to date with our latest research updates, announcements, and commentary.
+`
+  fs.writeFileSync(path.join(newsDir, '_index.md'), indexContent)
+
+  // Create individual post pages
+  for (const post of posts) {
+    const slug = post.slug || slugify(post.title)
+    const htmlContent = portableTextToHtml(post.content)
+
+    const frontMatter = `---
+title: "${post.title.replace(/"/g, '\\"')}"
+date: ${post.date}
+description: "${(post.description || '').replace(/"/g, '\\"')}"
+author: "${(post.author || 'Alignment Ethics Institute').replace(/"/g, '\\"')}"
+category: "${post.category || ''}"
+featured: ${post.featured || false}
+---
+
+`
+
+    const fileContent = frontMatter + htmlContent
+    fs.writeFileSync(path.join(newsDir, `${slug}.html`), fileContent)
+    console.log(`  Created: content/news/${slug}.html`)
+  }
+
+  console.log(`  Synced ${posts.length} news posts`)
+}
+
+async function syncVideos() {
+  console.log('Fetching videos from Sanity...')
+
+  const videos = await client.fetch(`
+    *[_type == "video" && status != "draft"] | order(order asc, date desc) {
+      _id,
+      title,
+      "slug": slug.current,
+      date,
+      description,
+      youtubeId,
+      context,
+      category,
+      featured,
+      order,
+      status
+    }
+  `)
+
+  const videosDir = path.join(__dirname, '..', 'content', 'videos')
+  if (!fs.existsSync(videosDir)) {
+    fs.mkdirSync(videosDir, {recursive: true})
+  }
+
+  // Create _index.md for the videos list page
+  const indexContent = `---
+title: "Videos"
+description: "Explainer videos about our benchmark results and research"
+---
+
+Watch short videos explaining our benchmark results, research methodology, and key concepts in alignment ethics.
+`
+  fs.writeFileSync(path.join(videosDir, '_index.md'), indexContent)
+
+  // Create individual video pages
+  for (const video of videos) {
+    const slug = video.slug || slugify(video.title)
+    const contextHtml = portableTextToHtml(video.context)
+
+    const frontMatter = `---
+title: "${video.title.replace(/"/g, '\\"')}"
+date: ${video.date}
+description: "${(video.description || '').replace(/"/g, '\\"')}"
+youtubeId: "${video.youtubeId || ''}"
+category: "${video.category || ''}"
+featured: ${video.featured || false}
+---
+
+`
+
+    const fileContent = frontMatter + contextHtml
+    fs.writeFileSync(path.join(videosDir, `${slug}.html`), fileContent)
+    console.log(`  Created: content/videos/${slug}.html`)
+  }
+
+  // Also write data file for potential use in other templates
+  const yamlContent = `# Auto-generated from Sanity CMS
+# Do not edit directly - changes will be overwritten
+
+videos:
+${videos.map(v => `  - title: "${(v.title || '').replace(/"/g, '\\"')}"
+    date: "${v.date || ''}"
+    description: "${(v.description || '').replace(/"/g, '\\"')}"
+    youtubeId: "${v.youtubeId || ''}"
+    link: "/videos/${v.slug || slugify(v.title)}/"
+    category: "${v.category || ''}"
+    featured: ${v.featured || false}`).join('\n')}
+`
+
+  fs.writeFileSync(path.join(__dirname, '..', 'data', 'videos.yaml'), yamlContent)
+  console.log(`  Synced ${videos.length} videos`)
+}
+
 async function main() {
   console.log('Syncing content from Sanity to Hugo...\n')
 
   try {
     await syncPublications()
     await syncTeamMembers()
+    await syncPosts()
+    await syncVideos()
     console.log('\nSync complete!')
   } catch (error) {
     console.error('Sync failed:', error.message)

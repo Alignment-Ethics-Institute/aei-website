@@ -21,8 +21,4 @@ advisory:
   []
 
 staff:
-  - name: "Allie Jones"
-    role: "Technical Advisor"
-    initials: "AJ"
-    photo: "/images/team/allie-jones.jpg"
-    bio: "Open source advocate, applied AI architect and builder, and 3x SF AI hackathon winner. Allie applies 15+ years in engineering and an MIT Applied Agentic AI certification to create meaningful, scalable, and secure AI solutions. She joined the Alignment Ethics Institute as Technical Advisor to help shape the technical strategy, systems, and technical operations."
+  []

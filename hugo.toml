@@ -24,9 +24,14 @@ title = "Alignment Ethics Institute"
   weight = 3
 
 [[menus.main]]
-  name = "Governance"
-  url = "/governance/"
+  name = "News"
+  url = "/news/"
   weight = 4
+
+[[menus.main]]
+  name = "Videos"
+  url = "/videos/"
+  weight = 5
 
 # TEMPORARILY HIDDEN for arXiv endorsement period — restore when ready
 # [[menus.main]]
@@ -64,9 +69,14 @@ title = "Alignment Ethics Institute"
   weight = 3
 
 [[menus.footer]]
-  name = "Governance"
-  url = "/governance/"
+  name = "News"
+  url = "/news/"
   weight = 4
+
+[[menus.footer]]
+  name = "Videos"
+  url = "/videos/"
+  weight = 5
 
 # TEMPORARILY HIDDEN for arXiv endorsement period
 # [[menus.footer]]

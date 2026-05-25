@@ -1,0 +1,65 @@
+{{ define "main" }}
+<article class="py-12 md:py-20">
+  <div class="container-narrow">
+    <!-- Back link -->
+    <nav class="mb-8">
+      <a href="/videos/" class="text-blue-light hover:text-blue-deep text-sm">
+        &larr; Back to Videos
+      </a>
+    </nav>
+
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-deep mb-4" data-testid="page-title">
+        {{ .Title }}
+      </h1>
+
+      <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+        {{ with .Params.date }}
+        <time datetime="{{ . }}">{{ dateFormat "January 2, 2006" . }}</time>
+        {{ end }}
+
+        {{ with .Params.category }}
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-deep/10 text-blue-deep capitalize">
+          {{ replace . "-" " " }}
+        </span>
+        {{ end }}
+      </div>
+    </header>
+
+    <!-- YouTube Embed -->
+    {{ with .Params.youtubeId }}
+    <div class="aspect-video rounded-xl shadow-lg overflow-hidden mb-8">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/{{ . }}"
+        title="{{ $.Title }}"
+        class="w-full h-full"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    {{ end }}
+
+    <!-- Description -->
+    {{ with .Params.description }}
+    <p class="text-lg text-gray-600 mb-8">{{ . }}</p>
+    {{ end }}
+
+    <!-- Context (portable text content) -->
+    {{ with .Content }}
+    <div class="border-t border-gray-200 pt-8">
+      <h2 class="text-xl font-semibold text-blue-deep mb-4">Context</h2>
+      <div class="prose prose-lg mx-auto text-gray-700" data-testid="page-content">
+        {{ . | safeHTML }}
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="mt-16 text-center" data-testid="page-cta">
+      <a href="/get-involved/" class="btn-primary no-underline">
+        Get Involved
+      </a>
+    </div>
+  </div>
+</article>
+{{ end }}
