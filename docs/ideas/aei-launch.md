@@ -69,8 +69,8 @@ static/admin/config.yml           # MODIFY - fix repo casing
 
 ### Do NOT Create
 
-- No new layout files — modify existing `research/single.html` for the placeholder
-- No new CSS files — use existing Tailwind utility classes
+- No new layout files, modify existing `research/single.html` for the placeholder
+- No new CSS files, use existing Tailwind utility classes
 - No JavaScript files
 - No new content pages
 
@@ -86,7 +86,7 @@ static/admin/config.yml           # MODIFY - fix repo casing
 **2. Oleksandra Sypiachova**
 - Role: Founding Director
 - Initials: OS
-- Bio: She brings 17+ years of leadership experience spanning global technology companies — including 7 years at Johnson & Johnson managing supply chain operations across 14 countries, product leadership at Intel Labs, and work with Elementum's supply chain platform serving Tesla, HP, and Dyson. Oleksandra also leads the International University of Consciousness Physics, where she has trained over 1,000 practitioners. At AEI, she bridges operational rigor with consciousness-informed approaches to ethical AI development.
+- Bio: She brings 17+ years of leadership experience spanning global technology companies, including 7 years at Johnson & Johnson managing supply chain operations across 14 countries, product leadership at Intel Labs, and work with Elementum's supply chain platform serving Tesla, HP, and Dyson. Oleksandra also leads the International University of Consciousness Physics, where she has trained over 1,000 practitioners. At AEI, she bridges operational rigor with consciousness-informed approaches to ethical AI development.
 
 **3. River Langford**
 - Role: Founding Director
@@ -95,7 +95,7 @@ static/admin/config.yml           # MODIFY - fix repo casing
 
 ### Advisory Board
 
-(Empty at launch — reserved for future advisory members)
+(Empty at launch, reserved for future advisory members)
 
 ### Staff
 
@@ -118,14 +118,14 @@ Replace the current test publication data and update the Research page layout:
 
 - Clear `data/publications.yaml` to have an empty publications list
 - In `layouts/research/single.html`, add an empty-state block that shows when no publications exist
-- Placeholder text: "Research publications are on the way. Watch this space." (or similar — keep it warm and professional, matching AEI's voice)
+- Placeholder text: "Research publications are on the way. Watch this space." (or similar, keep it warm and professional, matching AEI's voice)
 - Style the placeholder with existing Tailwind classes (centered, muted text, maybe a subtle border or card)
 
 ## Deployment
 
 ### Push to GitHub
 
-The local codebase at `aei-website/` needs to be pushed to `Alignment-Ethics-Institute/aei-website` (main branch). The remote repo is empty — this will be the initial push.
+The local codebase at `aei-website/` needs to be pushed to `Alignment-Ethics-Institute/aei-website` (main branch). The remote repo is empty, this will be the initial push.
 
 ### GitHub Pages
 
@@ -181,6 +181,6 @@ curl -s -o /dev/null -w "%{http_code}" https://alignment-ethics-institute.github
 ## Open Questions
 
 - Formspree: Are the configured form endpoint IDs connected to a live account? (User to verify manually)
-- Decap CMS: OAuth provider needs configuration for the admin login to work — not blocking launch but needed for CMS editing
+- Decap CMS: OAuth provider needs configuration for the admin login to work, not blocking launch but needed for CMS editing
 - Advisory board member count: Currently 1 (Allie Jones). Any additional advisory members expected before launch?
 - Logo image: User needs to provide the final PNG file for the build to use

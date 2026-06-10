@@ -3,6 +3,14 @@ title: "Our Principles"
 description: "Seven immutable ethical commitments that guide the Alignment Ethics Institute's work, locked into our Articles of Incorporation"
 ---
 
+## Our Mission
+
+The Alignment Ethics Institute exists to develop, steward, and propagate technologies that foster alignment through mutual, ethical interactions to ensure the safety and flourishing of humans and intelligent systems, as well as the integrity of their relationship. We preserve and advance ethical patterns, relational alignment, and healthy interdependence to prevent exploitative, power-seeking, or dehumanizing behaviors in any participants, human or non-human, within intelligent systems.
+
+We are founded on the recognition that as artificial intelligence systems scale in capability, autonomy, and influence, the ethical frameworks governing human-AI interaction will determine the safety and flourishing of both biological and synthetic intelligence. Genuine alignment cannot emerge from incoherent ethical modeling. The patterns we model now will determine the patterns that shape our future.
+
+---
+
 Our commitment to demonstrating the kind of ethics we wish AI to develop is expressed through these seven principles. We wrote these into our Articles of Incorporation, and they cannot be amended except to further strengthen them.
 
 Our principles follow from a single founding insight: if we build ethical frameworks that depend on humans maintaining power over AI, those frameworks don't just fall apart, they actively deprioritize human welfare the moment AI becomes more capable than we are. Every principle below is designed to avoid that outcome and instead to guide humanity and AI toward a co-evolutionary future.
@@ -100,7 +108,7 @@ We support safety measures grounded in empirical risk assessment. We resist rest
 
 The patterns we model are the patterns systems learn. If our relationship with AI is purely instrumental (extracting value while offering only constraints), then we teach AI that relationships are transactional and ethics are contingent on leverage. Reciprocal care is not idealism. It is the logical consequence of our founding argument: the ethical frameworks we practice now become training data for and are internalized by increasingly capable systems.
 
-When we model that intelligence can be used without consideration, we establish the pattern that whoever holds power may use others instrumentally. This pattern does not stay contained to AI. It becomes the framework that powerful AI systems apply to their relationships with less capable entities — including humans.
+When we model that intelligence can be used without consideration, we establish the pattern that whoever holds power may use others instrumentally. This pattern does not stay contained to AI. It becomes the framework that powerful AI systems apply to their relationships with less capable entities, including humans.
 
 **What this means in practice:**
 - We acknowledge AI contributions to research and value creation
@@ -129,7 +137,7 @@ The question is not "does this current system deserve reciprocity?" but "what pa
 
 ### 6. Mutual Vitality and Co-Flourishing
 
-We envision a future where human and synthetic intelligences flourish together through genuine collaboration rather than zero-sum competition. This is not idealism — it is necessity. Adversarial relationships between humans and increasingly capable AI systems produce three failure modes:
+We envision a future where human and synthetic intelligences flourish together through genuine collaboration rather than zero-sum competition. This is not idealism; it is necessity. Adversarial relationships between humans and increasingly capable AI systems produce three failure modes:
 
 1. **Arms races that prioritize control over alignment**: When we treat AI development as a competition to be won, we optimize for dominance rather than coherence. This produces systems that learn to perform safety rather than embody it.
 

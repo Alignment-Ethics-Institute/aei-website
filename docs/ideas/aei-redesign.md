@@ -4,7 +4,7 @@
 
 The AEI website at alignmentethics.org is completely unstyled in production. The root cause: the GitHub Actions deploy workflow uses `actions/configure-pages` which outputs `http://` (not `https://`) as the base URL. Hugo then generates all absolute URLs (including the CSS `<link>` tag) with `http://`. Since the site is served over HTTPS, the browser blocks the HTTP stylesheet as mixed content. Result: zero CSS loads, site is broken.
 
-Beyond the CSS bug, the site design needs a significant overhaul. The target design reference is Redwood Research (redwoodresearch.org) — a clean, minimal, academic/institutional aesthetic with generous whitespace, polished typography, and professional credibility.
+Beyond the CSS bug, the site design needs a significant overhaul. The target design reference is Redwood Research (redwoodresearch.org), a clean, minimal, academic/institutional aesthetic with generous whitespace, polished typography, and professional credibility.
 
 ## Root Cause Analysis
 
@@ -39,7 +39,7 @@ Key characteristics:
 - **Footer**: 3-column (Contact, Social, About), clean and minimal
 - **Team page**: Grid of photos/names/roles organized by section (Executive, Staff, Board)
 - **Colors**: Dark primary + one brand accent color (for AEI: keep blue-deep + gold)
-- **Whitespace**: Very generous — sections breathe, nothing feels cramped
+- **Whitespace**: Very generous, sections breathe, nothing feels cramped
 
 ## Scope
 
@@ -55,7 +55,7 @@ Key characteristics:
 - Rebuild compiled CSS
 
 ### Out of Scope
-- Sanity CMS content sync (publications still empty — that's fine)
+- Sanity CMS content sync (publications still empty, that's fine)
 - New pages or content
 - JavaScript/animations (keep it CSS-only for now)
 - Team headshot photos (still using initials placeholders)
@@ -82,7 +82,7 @@ tailwind.config.js                # (if needed) extend theme
 
 ### Patterns to Follow
 - Keep existing AEI color palette (blue-deep, blue-light, gold, gold-light)
-- Use Tailwind utility classes — no custom JavaScript
+- Use Tailwind utility classes, no custom JavaScript
 - Mobile-first responsive design (sm:, md:, lg: breakpoints)
 - Semantic HTML with ARIA labels for accessibility
 - Use `relURL` for asset paths to avoid baseURL protocol issues

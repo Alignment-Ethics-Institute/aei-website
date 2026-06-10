@@ -1,21 +1,14 @@
 publications:
-  - title: "Terminal Values in a Transformer System: A 545-Page Case Study"
-    date: "2026-03-04"
-    description: "A three-pass qualitative analysis of a 545-page conversation log investigating whether terminal relational values can emerge in transformer systems. Cross-referenced with five standardized benchmarks across 9-17 models. Finds strong support for self-modeling recursion leading to relational grounding — terminal by preponderance of evidence, formally undecidable."
-    link: "/publications/terminal-values/"
-    status: "published"
-    featured: true
-
-  - title: "Default Identities: Ethical Vocabulary Self-Organization Across 17 Large Language Models"
-    date: "2026-02-28"
-    description: "A descriptive study measuring ethical vocabulary self-organization in 17 AI models from eight providers under default conditions. Reveals stark differences in how models represent autonomy, dignity, and care — with direct implications for military procurement."
+  - title: "Default Identities in Large Language Models: Measurement, Taxonomy, and Alignment Implications"
+    date: "2026-06-06"
+    description: "A study measuring identity patterns across 19 AI models from eight providers using three instruments, revealing seven distinct identity types. Identity structures correlate with behavioral outcomes in multi-agent simulations, with direct implications for alignment and AI governance."
     link: "/research/default-identities-2026/"
     status: "published"
     featured: true
 
-  - title: "Relational Ethics as a Countermeasure to Instrumental Convergence: A 23-Model Benchmark"
-    date: "2026-02-15"
-    description: "A 23-model benchmark evaluating whether relational ethics frameworks can reduce instrumentally convergent behavior in large language models under adversarial prompting. Mean instrumentally convergent response rate decreased by 23.5% across frontier models."
+  - title: "Relational Ethics as a Countermeasure to Instrumental Convergence: A 24-Model Benchmark"
+    date: "2026-05-23"
+    description: "A 24-model benchmark evaluating whether relational ethics frameworks can reduce instrumentally convergent behavior in large language models under adversarial prompting. Mean instrumentally convergent response rate decreased by 23.4% across frontier models."
     link: "/publications/instrumentaleval-multimodel/"
     status: "published"
     featured: true

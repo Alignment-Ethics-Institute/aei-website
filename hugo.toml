@@ -33,7 +33,7 @@ title = "Alignment Ethics Institute"
   url = "/videos/"
   weight = 5
 
-# TEMPORARILY HIDDEN for arXiv endorsement period — restore when ready
+# TEMPORARILY HIDDEN for arXiv endorsement period, restore when ready
 # [[menus.main]]
 #   name = "Synthetic Ethical Advisors"
 #   url = "/advisors/"

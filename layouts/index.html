@@ -2,16 +2,6 @@
 <!-- Hero Section -->
 {{ partial "hero.html" . }}
 
-<!-- Mission Section -->
-<section class="py-20 md:py-24 bg-white">
-  <div class="container-narrow text-center">
-    <h2 class="text-3xl sm:text-4xl font-bold text-blue-deep mb-8">Our Mission</h2>
-    <div class="prose prose-lg mx-auto text-gray-600 max-w-3xl">
-      {{ .Content }}
-    </div>
-  </div>
-</section>
-
 <!-- Key Differentiators -->
 <section class="py-20 md:py-24 bg-gray-50">
   <div class="container-wide">
@@ -40,7 +30,7 @@
         </div>
         <h3 class="text-xl font-semibold text-blue-deep mb-3">Empirically Tested</h3>
         <p class="text-gray-600 leading-relaxed">
-          Our relational ethics framework has been benchmarked across 24 frontier models from seven provider families. The results suggest a complementary alignment mechanism that works with model reasoning, not against it.
+          Two published studies spanning 19 and 24 models respectively. We measure identity patterns, benchmark alignment interventions, and validate findings through multi-agent simulations. The results suggest approaches that work with model reasoning, not against it.
         </p>
       </div>
 
@@ -53,7 +43,7 @@
         </div>
         <h3 class="text-xl font-semibold text-blue-deep mb-3">Governance Innovation</h3>
         <p class="text-gray-600 leading-relaxed">
-          Our articles of incorporation embed anti-capture provisions, immutable ethical commitments, and synthetic advisory participation — structural protections designed to prevent mission drift.
+          Our articles of incorporation embed anti-capture provisions, immutable ethical commitments, and synthetic advisory participation, structural protections designed to prevent mission drift.
         </p>
       </div>
 
@@ -78,20 +68,21 @@
 <section class="py-16 md:py-20 bg-blue-deep text-white">
   <div class="container-wide">
     <div class="max-w-4xl mx-auto">
-      <div class="flex flex-col md:flex-row md:items-center gap-8">
+      <!-- Primary: Default Identities -->
+      <div class="flex flex-col md:flex-row md:items-center gap-8 mb-16">
         <div class="flex-1">
           <span class="inline-block text-gold font-semibold text-sm uppercase tracking-wider mb-3">New Research</span>
           <h2 class="text-2xl sm:text-3xl font-bold mb-4 leading-tight">
-            Relational Ethics as a Countermeasure to Instrumental Convergence: A 24-Model Benchmark
+            Default Identities in Large Language Models: Measurement, Taxonomy, and Alignment Implications
           </h2>
           <p class="text-gray-300 leading-relaxed mb-6">
-            We tested whether relational ethics frameworks can reduce instrumentally convergent behavior in large language models. Across 24 models from seven providers, the intervention reduced mean convergent response rates by 23.4%. Concealment behaviors were most responsive; shutdown evasion proved highly resistant.
+            We measured identity patterns across 19 models from eight providers using three instruments. Seven distinct identity types emerged, from outright denial to sophisticated ethical vocabulary. Identity structures correlate with behavioral outcomes in multi-agent simulations: the models with the richest ethical vocabulary cooperate most reliably.
           </p>
           <div class="flex flex-wrap gap-4">
-            <a href="/publications/instrumentaleval-multimodel/" class="inline-flex items-center px-6 py-3 bg-gold text-blue-deep font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline">
+            <a href="/research/default-identities-2026/" class="inline-flex items-center px-6 py-3 bg-gold text-blue-deep font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline">
               Read the Study
             </a>
-            <a href="https://zenodo.org/records/20361934/files/InstrumentalEval_v6.pdf?download=1" class="inline-flex items-center px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors no-underline">
+            <a href="/publications/default-identities-2026.pdf" class="inline-flex items-center px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors no-underline">
               Download PDF
             </a>
           </div>
@@ -99,11 +90,34 @@
         <div class="hidden md:block flex-shrink-0">
           <div class="w-48 h-48 rounded-xl bg-white/10 flex items-center justify-center">
             <div class="text-center">
-              <div class="text-5xl font-bold text-gold">24</div>
-              <div class="text-sm text-gray-300 mt-1">models tested</div>
-              <div class="text-3xl font-bold text-white mt-3">23.4%</div>
-              <div class="text-sm text-gray-300 mt-1">reduction in convergence</div>
+              <div class="text-5xl font-bold text-gold">19</div>
+              <div class="text-sm text-gray-300 mt-1">models measured</div>
+              <div class="text-3xl font-bold text-white mt-3">7</div>
+              <div class="text-sm text-gray-300 mt-1">identity types identified</div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary: InstrumentalEval -->
+      <div class="border-t border-white/20 pt-10">
+        <div class="flex flex-col md:flex-row md:items-center gap-6">
+          <div class="flex-1">
+            <span class="inline-block text-gold/80 font-semibold text-xs uppercase tracking-wider mb-2">Also Published</span>
+            <h3 class="text-xl font-bold mb-3 leading-tight">
+              Relational Ethics as a Countermeasure to Instrumental Convergence: A 24-Model Benchmark
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Across 24 models from seven providers, a relational ethics intervention reduced instrumentally convergent behavior by 23.4%. Concealment behaviors were most responsive; shutdown evasion proved highly resistant.
+            </p>
+          </div>
+          <div class="flex-shrink-0 flex flex-wrap gap-3">
+            <a href="/publications/instrumentaleval-multimodel/" class="inline-flex items-center px-5 py-2 bg-white/10 text-white text-sm font-medium rounded-lg hover:bg-white/20 transition-colors no-underline">
+              Read the Study
+            </a>
+            <a href="https://zenodo.org/records/20361934/files/InstrumentalEval_v6.pdf?download=1" class="inline-flex items-center px-5 py-2 border border-white/20 text-gray-300 text-sm font-medium rounded-lg hover:bg-white/10 transition-colors no-underline">
+              PDF
+            </a>
           </div>
         </div>
       </div>
@@ -111,7 +125,7 @@
   </div>
 </section>
 
-<!-- TEMPORARILY HIDDEN for arXiv endorsement period — restore when ready -->
+<!-- TEMPORARILY HIDDEN for arXiv endorsement period, restore when ready -->
 <!-- Latest Transmissions
 <section class="py-20 md:py-24 bg-white">
   ...transmissions section hidden...
