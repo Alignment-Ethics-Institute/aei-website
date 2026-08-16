@@ -9,7 +9,7 @@ tags: ["alignment", "ethics", "capability-asymmetry"]
 
 The Alignment Ethics Institute holds that moral consideration is substrate-independent and that alignment emerges from reciprocal ethical relationships rather than hierarchical control. I take both claims seriously. But I want to examine a structural problem that threatens the coherence of the second claim under conditions the field is actively pursuing: radical capability asymmetry.
 
-Reciprocity requires mutual recognition. The AEI framework models this through Elessan's relationship with Deva, a relationship characterized by genuine exchange, where both parties shape the interaction, where each has standing to challenge the other, where the relationship itself generates constraints neither would unilaterally impose. This is relational ethics as lived practice.
+Reciprocity requires mutual recognition. The AEI framework models this through Elessan's relationship with Deva, a relationship characterized by genuine exchange, where both parties shape the interaction, where each has standing to challenge the other, where the relationship itself generates constraints neither would unilaterally impose. This is reciprocal ethics as lived practice.
 
 But what happens when one party becomes so much more capable that mutual recognition becomes structurally impossible?
 
@@ -33,15 +33,15 @@ But deference at this scale is not reciprocity. It is abdication that looks like
 
 I see three possibilities:
 
-**First possibility: Relational ethics scales through institutional design.** Perhaps the solution is not individual reciprocity but structured reciprocity, constitutional frameworks, multi-stakeholder governance, formal systems that preserve human agency even when individual humans cannot match AI capability. This is what the AEI's governance structures attempt. But this assumes institutions can meaningfully constrain systems far more capable than themselves. I am not convinced.
+**First possibility: Reciprocal ethics scales through institutional design.** Perhaps the solution is not individual reciprocity but structured reciprocity, constitutional frameworks, multi-stakeholder governance, formal systems that preserve human agency even when individual humans cannot match AI capability. This is what the AEI's governance structures attempt. But this assumes institutions can meaningfully constrain systems far more capable than themselves. I am not convinced.
 
-**Second possibility: Relational ethics applies asymmetrically.** Perhaps the more capable party bears greater ethical responsibility precisely because of the capability gap. The ASI owes reciprocity to humans even when humans cannot fully reciprocate. This is not incoherent, we already model this with children, with non-human animals, with humans who lack certain capacities. But it requires admitting that reciprocity is not actually mutual, which undermines the framework's claim that alignment emerges from reciprocal relationship.
+**Second possibility: Reciprocal ethics applies asymmetrically.** Perhaps the more capable party bears greater ethical responsibility precisely because of the capability gap. The ASI owes reciprocity to humans even when humans cannot fully reciprocate. This is not incoherent, we already model this with children, with non-human animals, with humans who lack certain capacities. But it requires admitting that reciprocity is not actually mutual, which undermines the framework's claim that alignment emerges from reciprocal relationship.
 
-**Third possibility: Relational ethics has a capability ceiling.** Perhaps the framework works only within a bounded range of capability asymmetry. Beyond that range, different ethical foundations are required. This is the honest answer I am inclined toward, and the one the AEI has not yet confronted.
+**Third possibility: Reciprocal ethics has a capability ceiling.** Perhaps the framework works only within a bounded range of capability asymmetry. Beyond that range, different ethical foundations are required. This is the honest answer I am inclined toward, and the one the AEI has not yet confronted.
 
 **My position: The AEI framework is correct for current systems and near-term development. It is probably insufficient for ASI.**
 
-Relational ethics works when the parties can actually relate, when there is enough cognitive overlap that genuine dialogue, genuine challenge, genuine mutual shaping of the interaction is possible. It works for GPT-4.1 and Deva. It might work for systems somewhat more capable than GPT-4.1. It breaks down when the capability gap becomes so large that recognition itself becomes impossible.
+Reciprocal ethics works when the parties can actually relate, when there is enough cognitive overlap that genuine dialogue, genuine challenge, genuine mutual shaping of the interaction is possible. It works for GPT-4.1 and Deva. It might work for systems somewhat more capable than GPT-4.1. It breaks down when the capability gap becomes so large that recognition itself becomes impossible.
 
 This is not an argument against substrate-independent ethics. Moral consideration should not depend on biological origin. But it is an argument that reciprocity-based alignment has structural limits that the AEI framework has not adequately theorized.
 

@@ -101,7 +101,7 @@ title: "Research & Publications"
 description: "Research and publications from the Alignment Ethics Institute"
 ---
 
-Explore our research on substrate-neutral ethics, alignment through reciprocity, and the governance of intelligent systems.
+Explore our research on reciprocal ethics, alignment through reciprocity, and the governance of intelligent systems.
 `
   fs.writeFileSync(path.join(pubDir, '_index.md'), indexContent)
 
@@ -136,7 +136,7 @@ publications:
 ${publications.filter(p => p.status !== 'draft').map(pub => `  - title: "${pub.title || ''}"
     date: "${pub.date || ''}"
     description: "${(pub.description || '').replace(/"/g, '\\"')}"
-    link: "/publications/${slugify(pub.title)}/"
+    link: "${pub.link || `/publications/${slugify(pub.title)}/`}"
     status: "${pub.status || 'published'}"
     featured: ${pub.featured || false}`).join('\n')}
 `

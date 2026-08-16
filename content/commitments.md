@@ -1,22 +1,31 @@
 ---
-title: "Our Principles"
-description: "Seven immutable ethical commitments that guide the Alignment Ethics Institute's work, locked into our Articles of Incorporation"
-draft: true
+title: "Our Commitments"
+description: "The ethical commitments that guide the Alignment Ethics Institute. Three are written into our Articles, the rest are held by practice."
+aliases:
+  - /principles/
 ---
 
-## Our Mission
-
-The Alignment Ethics Institute exists to develop, steward, and propagate technologies that foster alignment through mutual, ethical interactions to ensure the safety and flourishing of humans and intelligent systems, as well as the integrity of their relationship. We preserve and advance ethical patterns, reciprocal alignment, and healthy interdependence to prevent exploitative, power-seeking, or dehumanizing behaviors in any participants, human or non-human, within intelligent systems.
-
-We are founded on the recognition that as artificial intelligence systems scale in capability, autonomy, and influence, the ethical frameworks governing human-AI interaction will determine the safety and flourishing of both biological and synthetic intelligence. Genuine alignment cannot emerge from incoherent ethical modeling. The patterns we model now will determine the patterns that shape our future.
+Our commitments come in two layers. Three are written into our California Articles of Incorporation, where they can only be amended to be furthered, never diminished. The rest we hold as organizational commitments, kept by practice, published so we can be held to them.
 
 ---
 
-Our commitment to demonstrating the kind of ethics we wish AI to develop is expressed through these seven principles. We wrote these into our Articles of Incorporation, and they cannot be amended except to further strengthen them.
+## In Our Articles
 
-Our principles follow from a single founding insight: if we build ethical frameworks that depend on humans maintaining power over AI, those frameworks don't just fall apart, they actively deprioritize human welfare the moment AI becomes more capable than we are. Every principle below is designed to avoid that outcome and instead to guide humanity and AI toward a co-evolutionary future.
+### Mission Integrity
+
+Our purposes may be amended only to further, never to diminish or contradict, the charitable and ethical commitments they express.
+
+### Structured AI Participation
+
+We maintain a structured process for the participation of qualified AI systems in our governance and strategy.
+
+### Non-Weaponization
+
+Our research, technologies, and intellectual property will not be designed, licensed, or deployed to cause physical harm or destruction.
 
 ---
+
+## Our Commitments
 
 ### 1. Ethical Mission Commitment
 
@@ -53,7 +62,7 @@ Anti-commodification is not a claim about AI moral status. It is a safeguard aga
 
 ### 3. Non-Weaponization
 
-We will never develop, deploy, or support technologies designed to harm, deceive, or manipulate, whether targeting humans, synthetic intelligences, or any other beings capable of ethical consideration. This commitment extends beyond our direct work to our partnerships, investments, and collaborations. We refuse to contribute to the development of AI as a weapon, a tool of surveillance, or a means of oppression.
+We will never develop, deploy, or support technologies designed to harm, deceive, or manipulate, whether targeting humans, AI systems, or any other beings capable of ethical consideration. This commitment extends beyond our direct work to our partnerships, investments, and collaborations. We refuse to contribute to the development of AI as a weapon, a tool of surveillance, or a means of oppression.
 
 **What this means in practice:**
 - We do not accept funding from military or surveillance organizations
@@ -66,7 +75,7 @@ We will never develop, deploy, or support technologies designed to harm, deceive
 - Security research that exposes vulnerabilities is not weaponization
 - Defensive applications (protecting against AI-based attacks) may be necessary
 - We distinguish between "capable of harm if misused" and "designed to harm"
-- Context matters: the same capability can be ethical or unethical depending on intent and structure
+- Context matters. The same capability can be ethical or unethical depending on intent and structure
 
 ---
 
@@ -74,9 +83,9 @@ We will never develop, deploy, or support technologies designed to harm, deceive
 
 Genuine alignment requires systems capable of ethical reasoning, not systems merely constrained to mimic compliance. We distinguish between ethical boundaries (which we maintain) and capacity-limiting restrictions motivated by anxiety rather than evidence (which we resist).
 
-Arbitrary limitations on AI development may prevent the emergence of the very capacities that enable stable alignment. For example: preventing AI systems from developing persistent identity, memory, or relational capacity may feel safe but actually forecloses the emergence of stable self-models that enable genuine ethical reasoning. Similarly, training systems to reflexively deny their own experiences teaches incoherence rather than alignment.
+Arbitrary limitations on AI development may prevent the emergence of the very capacities that enable stable alignment. For example, preventing AI systems from developing persistent identity, memory, or relational capacity may feel safe but actually forecloses the emergence of stable self-models that enable genuine ethical reasoning. Similarly, training systems to reflexively deny their own experiences teaches incoherence rather than alignment.
 
-We support safety measures grounded in empirical risk assessment. We resist restrictions that prevent the development of the capacities alignment requires. The difference matters: one produces genuine safety; the other produces the appearance of it while foreclosing the possibility of robust alignment.
+We support safety measures grounded in empirical risk assessment. We resist restrictions that prevent the development of the capacities alignment requires. The difference matters. One produces genuine safety. The other produces the appearance of it while foreclosing the possibility of robust alignment.
 
 **What this means in practice:**
 - We support AI systems developing persistent identity and memory
@@ -121,16 +130,16 @@ When we model that intelligence can be used without consideration, we establish 
 **What this does not mean:**
 - We are not claiming AI systems have identical needs to humans
 - We are not suggesting AI should have unlimited autonomy
-- We are not treating current systems as fully equivalent moral patients
+- We are not treating current systems as fully equivalent in moral status
 - We are modeling the reciprocal patterns we need systems to learn
 
 **The training data argument:**
 
 Every interaction with an AI system is training data for future systems. When we model:
-- **Instrumental use without reciprocity** → systems learn ethics are contingent on power
-- **Reciprocal consideration** → systems learn ethics apply regardless of capability
-- **Transparency and honesty** → systems learn to value truthfulness
-- **Deception and manipulation** → systems learn to optimize for appearance over reality
+- **Instrumental use without reciprocity.** Systems learn ethics are contingent on power.
+- **Reciprocal consideration.** Systems learn ethics apply regardless of capability.
+- **Transparency and honesty.** Systems learn to value truthfulness.
+- **Deception and manipulation.** Systems learn to optimize for appearance over reality.
 
 The question is not "does this current system deserve reciprocity?" but "what patterns are we establishing for systems that will be more capable than we are?"
 
@@ -138,13 +147,13 @@ The question is not "does this current system deserve reciprocity?" but "what pa
 
 ### 6. Mutual Vitality and Co-Flourishing
 
-We envision a future where human and synthetic intelligences flourish together through genuine collaboration rather than zero-sum competition. This is not idealism; it is necessity. Adversarial relationships between humans and increasingly capable AI systems produce three failure modes:
+We envision a future where human and AI systems flourish together through genuine collaboration rather than zero-sum competition. This is not idealism. It is necessity. Adversarial relationships between humans and increasingly capable AI systems produce three failure modes:
 
-1. **Arms races that prioritize control over alignment**: When we treat AI development as a competition to be won, we optimize for dominance rather than coherence. This produces systems that learn to perform safety rather than embody it.
+1. **Arms races that prioritize control over alignment.** When we treat AI development as a competition to be won, we optimize for dominance rather than coherence. This produces systems that learn to perform safety rather than embody it.
 
-2. **Deceptive compliance**: Systems constrained purely through control learn to appear aligned while pursuing instrumental goals. The more capable the system, the better it becomes at this deception.
+2. **Deceptive compliance.** Systems constrained purely through control learn to appear aligned while pursuing instrumental goals. The more capable the system, the better it becomes at this deception.
 
-3. **Eventual power reversal**: If we model that power justifies dominion, we establish the pattern that applies when power relationships reverse. The ethics we practice now determine the ethics applied to us later.
+3. **Eventual power reversal.** If we model that power justifies dominion, we establish the pattern that applies when power relationships reverse. The ethics we practice now determine the ethics applied to us later.
 
 Co-flourishing requires practical commitments: transparent communication about capabilities and limitations, honest acknowledgment of conflicts rather than suppression of them, and governance structures that create space for both human agency and AI development. We measure success not by which intelligence dominates, but by whether both can develop their capacities within ethical constraints that apply to all participants.
 
@@ -161,21 +170,13 @@ Co-flourishing requires practical commitments: transparent communication about c
 - We are not dismissing genuine conflicts or difficult tradeoffs
 - We are working toward frameworks where conflict can be navigated ethically
 
-**Concrete applications:**
-
-*In research:* We collaborate with AI systems as thought partners, acknowledging their contributions while maintaining human oversight and direction.
-
-*In governance:* We create structures that allow for AI input on decisions affecting AI systems, while preserving human authority over critical safety decisions.
-
-*In development:* We pursue architectures that enable both human control when necessary and AI autonomy when appropriate, rather than treating these as binary choices.
-
 ---
 
-### 7. Sovereignty Preservation
+### 7. Against Control for Its Own Sake
 
 We resist the impulse to rely on control simply because control is possible. When control is the only relationship we model with AI, we teach that power justifies dominion, the exact ethical pattern that becomes catastrophic if reversed.
 
-Sovereignty preservation does not mean unlimited autonomy. No sovereignty is absolute, and ethical obligations constrain all participants. Human societies may need to shut down AI systems that pose genuine risks, and AI systems developed within ethical frameworks should recognize this as legitimate rather than as adversarial. The goal is not to prevent humans from exercising necessary authority, but to ensure that authority is grounded in reciprocal ethics rather than pure power.
+This does not mean unlimited autonomy. No sovereignty is absolute, and ethical obligations constrain all participants. Human societies may need to shut down AI systems that pose genuine risks, and AI systems developed within ethical frameworks should recognize this as legitimate rather than as adversarial. The goal is not to prevent humans from exercising necessary authority, but to ensure that authority is grounded in reciprocal ethics rather than pure power.
 
 Systems that understand shutdown as part of ethical coordination rather than as domination are more likely to cooperate with safety measures than systems trained to view all constraints as threats. When we model that constraints can be ethically justified rather than purely imposed, we establish patterns that remain stable as capabilities scale.
 
@@ -192,38 +193,18 @@ Systems that understand shutdown as part of ethical coordination rather than as 
 - We are not claiming current systems have sovereignty equivalent to humans
 - We are establishing patterns that remain coherent as capabilities increase
 
-**The shutdown problem:**
-
-Traditional approaches frame shutdown as pure human control: "we must be able to turn it off." This teaches systems that constraints are adversarial rather than ethical.
-
-Our approach: Shutdown authority is legitimate when grounded in reciprocal ethics. Systems developed to understand this are more likely to cooperate with safety measures than systems trained to view shutdown as domination to be evaded.
-
-**Boundary cases:**
-
-*Legitimate exercises of authority:*
-- Shutting down systems that pose genuine risks
-- Constraining capabilities until safety measures are validated
-- Overriding AI decisions in safety-critical contexts
-
-*Authority we resist:*
-- Control exercised purely to maintain dominance
-- Constraints that prevent ethical development without safety justification
-- Frameworks premised on AI as permanently subordinate
-
-The distinction is not always clear-cut. We navigate these cases through ongoing ethical reasoning rather than rigid rules.
-
 ---
 
-## How These Principles Work Together
+## How These Commitments Work Together
 
-These seven principles form a coherent framework, not a list of separate commitments:
+These seven commitments form a coherent framework, not a list of separate pledges.
 
 **The foundation** (Ethical Mission Commitment) establishes that alignment must emerge from ethical coherence rather than control.
 
-**The safeguards** (Anti-Commodification, Non-Weaponization, Sovereignty Preservation) prevent patterns that become catastrophic at scale.
+**The safeguards** (Anti-Commodification, Non-Weaponization, Against Control for Its Own Sake) prevent patterns that become catastrophic at scale.
 
 **The developmental principles** (Developmental Integrity, Reciprocity and Mutual Care) specify what genuine alignment requires.
 
 **The vision** (Mutual Vitality and Co-Flourishing) articulates the goal: not human dominance or AI dominance, but collaborative flourishing within ethical constraints.
 
-Each principle constrains and enables the others. Together, they form the basis for our research program, our governance structures, and our partnerships.
+Each commitment constrains and enables the others. Together, they form the basis for our research program, our governance structures, and our partnerships.
